@@ -1,0 +1,29 @@
+.Left-Contact {
+    line-height: 1.5em;
+    margin: 20px 0 50px 0;
+}
+.Left-Contact p {
+    margin: 0;
+    padding-left: 45px;
+}
+
+.Contact-Item {
+    margin-bottom: -15px;
+}
+
+.Title-Container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+.Title-Container div {
+    width: 52px;
+    height: 20px;
+    background-color: gold;
+}
+.Title-Container p {
+    background-color: rgb(28, 28, 28);
+    width: 100%;
+    padding-left: 2px;
+}

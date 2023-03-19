@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700&display=swap');
+
+.Main-Cv {
+    flex: 2;
+    display: flex;
+    font-family: "Syne";
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    --blue: rgba(34,45,58,255);
+}
+
+.Cv-Left {
+    flex: .5;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Left-Image {
+    width: 100%;
+    height: 350px;
+    /* background: url("../images/avatar.svg") no-repeat; */
+    background-size: 100%;
+}
+
+.Left-Ed-Ref {
+    height: min-content;
+    margin-top: 20px;
+    padding-left: 50px;
+}
+
+.Left-Container {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Left-Container h1 {
+    font-weight: 100;
+    font-size: 1.7em;
+    font-family: "Syne";
+}
+
+.Left-Container h1::after {
+    display: block;
+    content: "";
+    margin-top: 10px;
+    width: 100%;
+    height: 3px;
+    background-color: gold;
+}
+
+.Item {
+    position: relative;
+    margin-left: 50px;
+    /* display: flex;
+    flex-direction: column; */
+    margin-bottom: 20px;
+}
+
+.Item:hover button {
+    visibility: visible;
+}
+
+.Item button {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+}
+
+.Item p {
+    margin: 2px;
+    padding: 0;
+}
+
+.Item-Title {
+    font-weight: 600;
+    font-size: 1.2em;
+
+}
+
+button {
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.Reference {
+    margin-top: 20px;
+}
+
+
+
+/* RIGHT */
+/* banner */
+.Cv-Right {
+    flex: 1;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.Right-Banner {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.Banner {
+    width: 100%;
+    height: 75%;
+    background-color: gold;
+    padding-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    line-height: 1px;
+}
+
+.Banner-Name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first,
+.last {
+    text-align: left;
+    font-size: 2.2rem;
+    color: rgb(44, 44, 44);
+    /* font-family: "Syne"; */
+}
+
+.first {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.title {
+    margin-top: -1px;
+    font-size: 1.8em;
+    text-align: left;
+}
+
+/* content */
+.Right-Content {
+    height: 70%;
+    padding: 30px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Right-Content div div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.Content-Title {
+    font-size: 1.6em;
+}
+
+.Content-Title::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    margin-top: 20px;
+    background-color: black;
+}
+
+.Content-About {
+    flex: 1;
+}
+
+
+.About p {
+    font-size: 1.2em;
+}
+/* .About {
+    font-size: 1.5em;
+    font-weight: 200;
+} */
+
+
+
+/* EXPERIENCE */
+
+.Content-Experience {
+    flex: 1;
+}
+
+.Exp {
+    display: grid;
+    grid-template-columns: .2fr 1fr 1fr;
+    grid-template-rows: min-content min-content 1fr;
+    grid-template-areas:  
+        "date pos pos"
+        "date company btn"
+        "date job job"
+    ;
+}
+
+
+.date {
+    grid-area: date;
+    margin-right: 20px;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 23px;
+}
+
+.position, .company, .date {
+    color: rgb(40, 40, 40);
+    font-weight: 550;
+}
+
+.position {
+    grid-area: pos;
+    margin-bottom: -18px;
+}
+
+.company {
+    grid-area: company;
+}
+
+.jobDesc {
+    grid-area: job;
+    margin-top: -2px;
+    font-size: 1.1em;
+}
+
+.delete-container {
+    visibility: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+}
+
+.delete {
+    grid-area: btn;
+    height: 20px;
+    margin-right: 2em;
+    width: 5em;
+}
+
+
+.Exp:hover .delete-container {
+    visibility: visible;
+}
+
+
+
+/* SKILLS */
+
+.Content-Skill {
+    flex: 1;
+}
+
+.Skill-Container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: min-content;
+}
+
+.Skill-Item {
+    position: relative;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Skill-Item:hover img {
+    visibility: visible;
+}
+
+.Skill-Item label {
+    width: 100%;
+    text-align: left;
+    font-size: 1.2em;
+    font-family: "Syne";
+}
+
+.svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    width: 30px;
+    height: 30px;
+}
+
+input[type="range"] {
+    border: none;
+    box-shadow: none;
+}
+
+
+
+  progress {
+    border-radius: 7px; 
+    width: 100%;
+    height: 22px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+    background-color: var(--blue);
+  }
+  
+  /* Set the color and thickness of the progress bar */
+  progress::-webkit-progress-value {
+    border-radius: 7px; 
+    width: 100%;
+    height: 22px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+    background-color: var(--blue);
+  }
+  
+  progress::-moz-progress-bar {
+    border-radius: 7px; 
+    width: 100%;
+    height: 22px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+    background-color: var(--blue);
+  }
+  
+  progress::-ms-fill {
+    border-radius: 7px; 
+    width: 100%;
+    height: 22px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+    background-color: var(--blue);
+  }
+  
+  /* Set the appearance of the progress bar in Firefox */
+  @-moz-document url-prefix() {
+    progress {
+      -moz-appearance: none;
+    }
+    progress::-moz-progress-bar {
+      -moz-appearance: none;
+    }
+  }
+  

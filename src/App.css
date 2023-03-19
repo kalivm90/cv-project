@@ -1,0 +1,20 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  background-color: #d0d0d0;
+}
+
+.App-Main {
+  height: min-content;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.Main-Form, .Main-Cv {
+  background-color: #f4f4f4;
+  width: 100%;
+  height: min-content;
+  box-shadow: 2px 3px 5px rgb(155, 155, 155);
+}

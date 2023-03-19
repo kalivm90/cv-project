@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.App-Nav {
+    height: 120px;
+    background-color: #222d3a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6em 0 4em;
+  }
+
+.App-Nav h1 {
+    font-size: 4em;
+    font-family: "Indie Flower";
+    color: white;
+}
+
+.App-Nav img {
+    width: 120px;
+}
